@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mundo Pesadilla</title>
+        <link rel="shortcut icon" href="../assets/images/faviconscream.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script src="https://kit.fontawesome.com/a78adfa07f.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body class="body">
+        
+        <header class="header">
+
+            <section>
+
+            <div class="flex">
+
+                <a href="../index.html">
+                    <img class="flex__logo" src="../assets/images/mTerror1.png" alt="Imagen Logo" width="100" height="100"/>
+                </a>
+                <nav class="nav">
+
+                    <ul class="nav__ul">
+
+                        <li class="box">
+                            <a href="../index.html">
+                                <span>Inicio</span>
+                                <span><i class="fa-solid fa-skull-crossbones"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="box">
+                            <a href="../pages/atracciones.html">
+                                <span>Atracciones</span>
+                                <span><i class="fa-solid fa-skull-crossbones"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="box">
+                            <a href="../pages/ubicacion.html">
+                                <span>Ubicacion</span>
+                                <span><i class="fa-solid fa-skull-crossbones"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="box">
+                            <a href="../pages/contacto.html">
+                                <span>Contacto</span>
+                                <span><i class="fa-solid fa-skull-crossbones"></i></span>
+                            </a>
+                        </li>
+
+                        <div class="comprar">
+
+                            <li class="box__compra">
+                                <img src="../assets/images/entradas.png" alt="Imagen Entradas" height="40" width="40">
+                            </li>  
+
+                            <li>
+                                <p class="box__compra">Saca tus entradas</p>
+                            </li>
+
+                        </div>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            </section>
+
+        </header>
+
+        <main class="main contacto__main" >
+
+            <form class="form" action="send.php" method="get" enctype="multipart/form-data">
+
+                <div class="div__form">
+
+                    <div class="information">
+                        <span><label class="nombre" for="nombre">Escribi tu nombre</label></span>
+                        <input class="nombreinput inputhover" type="text" placeholder="Nombre y Apellido" id=nombre />
+                    </div>
+                            
+                    <div class="information">
+                        <span><label class="sexoinput" for="sexo">Sexo</label></span>
+                        <select class="sexoinput" >
+                            <option id="sexo">Hombre</option>
+                            <option id="sexo">Mujer</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="information">
+                        <span><label class="email" class="email" for="email">Pone tu email</label></span>
+                        <input class="emailinput inputhover" type="email" placeholder="Email" id=email />
+                    </div>
+
+                    <div class="information">
+                        <span><label class="mensaje" for="mensaje">Que queres decirnos?</label></span>
+                        <textarea class="mensajeinput inputhover" cols="35" rows="5" placeholder="Escribi tu mensaje" id="mensaje"></textarea>
+                    </div>
+
+                    <div class="avisos">
+                        <span><p>Desea recibir avisos de promociones?</p></span>
+
+                        <label for="Si">Si</label>
+                        <input type="radio" name="promociones" id="Si"/>
+
+                        <label for="No">No</label>
+                        <input type="radio" name="promociones" id="No"/>
+                    </div>
+
+                    <div class="div__condiciones">
+                                
+                        <input type="checkbox" id="Terminos"/>
+                        <span><label for="Terminos">Acepto terminos y condiciones</label></span>
+
+                    </div>
+
+                    <div>
+                        <button type="submit">Enviar consulta</button>
+                        <button type="reset">Borrar formulario</button>
+                    </div>
+
+                </div>
+
+
+
+            </form>
+
+
+        </main>
+
+        <footer>
+
+            <section>
+
+                <div class="footer">
+
+
+                    <div class="footer__left">
+                        <h3 class="footer__item">Seguinos!</h3>
+
+                        <a href="https://twitter.com/?lang=es"><img class="footer__item" src="../Assets/images/twitter22.png" alt="Logo twitter" height="30" width="30"/></a>
+                        <a href="https://www.facebook.com/"><img class="footer__item" src="../Assets/images/facebook22.png" alt="Logo facebook" height="20" width="20"/></a>
+                        <a href="https://www.instagram.com/"><img class="footer__item" src="../assets/images/instagram22.png" alt="Logo instagram" height="25" width="40"/></a>
+                    
+                    </div>
+
+                    <div class="footer__right">
+
+                        <h3 class="footer__item">Descarga la app</h3>
+                        <img class="footer__item"  src="../Assets/images/celu-09.png" alt="Imagen celular" height="25" width="25" />
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </footer>
+
+        <div class="envelope">
+            <a href="../pages/contacto.html">
+                <img class="envelope__img" src="../assets/images/envelope.jpg" alt="Envelope" height="50" width="50">
+            </a>
+        </div>
+
+    </body>
+
+</html>
